@@ -1,5 +1,53 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
+
 body{
-    background: white;
+  background-color: rgb(0, 99, 0);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 25%;
+}
+
+#carta {
+  background: white;
+  text-align: center;
+  position: relative;
+  font-size: 3em;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 100px;
+  height: 150px;
+  
+}
+
+.icono-arriba {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 0.5em; 
+}
+
+.numero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icono-abajo {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 0.5em;
+  transform: rotate(180deg);  /* rotar el icono inferior */
+}
+
+.rojo {
+  color: red;
+}
+
+.negro {
+  color: black;
 }
