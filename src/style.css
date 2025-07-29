@@ -1,12 +1,15 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 
-body{
-  background-color: rgb(0, 99, 0);
+body {
+  background: #007e05;
+  background: radial-gradient(circle farthest-corner at center center, #007e05 5%, #0b2d00 80%, #000000 180%);
+  background: -webkit-radial-gradient(circle farthest-corner at center center, #007e05 5%, #0b2d00 80%, #000000 180%);
+  background: -moz-radial-gradient(circle farthest-corner at center center, #007e05 5%, #0b2d00 80%, #000000 180%);
   display: flex;
   justify-content: center;
   align-content: center;
-  margin-top: 25%;
+  margin-top: 10%;
 }
 
 #carta {
@@ -17,16 +20,19 @@ body{
   padding: 20px;
   border: 1px solid black;
   border-radius: 3px;
-  width: 100px;
-  height: 150px;
-  
+  width: 200px;
+  height: 300px;
+  box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.75);
+
 }
 
 .icono-arriba {
   position: absolute;
   top: 5px;
-  left: 5px;
-  font-size: 0.5em; 
+  left: 15px;
+  font-size: 1em;
 }
 
 .numero {
@@ -39,9 +45,10 @@ body{
 .icono-abajo {
   position: absolute;
   bottom: 5px;
-  right: 5px;
-  font-size: 0.5em;
-  transform: rotate(180deg);  /* rotar el icono inferior */
+  right: 15px;
+  font-size: 1em;
+  transform: rotate(180deg);
+  /* rotar el icono inferior */
 }
 
 .rojo {
